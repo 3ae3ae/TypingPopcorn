@@ -1,13 +1,76 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Typing Popcorn</title>
   </head>
   <body>
-    <div id="app"></div>
+    <main class="container">
+      <header>
+        <nav>
+          <ul>
+            <li><strong>Typing Popcorn</strong></li>
+          </ul>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <article>
+          <nav>
+            <ul>
+              <li>
+                <button type="button"><strong>B</strong></button>
+              </li>
+              <li>
+                <button type="button"><em>I</em></button>
+              </li>
+              <li>
+                <button type="button"><u>U</u></button>
+              </li>
+              <li>
+                <button type="button"><strike>S</strike></button>
+              </li>
+              <li>
+                <select name="select" aria-label="Select" required>
+                  <option selected disabled value="">글꼴</option>
+                  <option>돋움</option>
+                  <option>굴림</option>
+                  <option>명조</option>
+                  <option>궁서</option>
+                  false
+                </select>
+              </li>
+            </ul>
+          </nav>
+          <header>
+            <input
+              type="text"
+              name="text"
+              placeholder="제목"
+              aria-label="Text"
+            />
+          </header>
+          <textarea
+            name="body"
+            placeholder="내용을 입력하세요"
+            aria-label="문서 내용"
+          ></textarea>
+        </article>
+      </main>
+
+      <footer></footer>
+    </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
